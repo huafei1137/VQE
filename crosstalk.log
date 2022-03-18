@@ -1,0 +1,212 @@
+Reading file
+[[0, 1, 2, 3, 4, 6, 4, 5, 5, 3, 2, 1], [1, 0, 1, 2, 3, 5, 3, 4, 4, 2, 1, 2], [2, 1, 0, 1, 2, 4, 2, 3, 3, 1, 2, 3], [3, 2, 1, 0, 1, 3, 1, 2, 2, 2, 3, 4], [4, 3, 2, 1, 0, 2, 2, 1, 1, 3, 4, 5], [6, 5, 4, 3, 2, 0, 2, 1, 1, 3, 4, 5], [4, 3, 2, 1, 2, 2, 0, 1, 3, 1, 2, 3], [5, 4, 3, 2, 1, 1, 1, 0, 2, 2, 3, 4], [5, 4, 3, 2, 1, 1, 3, 2, 0, 4, 5, 6], [3, 2, 1, 2, 3, 3, 1, 2, 4, 0, 1, 2], [0, 0, 1, 2, 3, 5, 3, 4, 4, 2, 0, 1], [1, 0, 1, 2, 3, 5, 3, 4, 4, 2, 1, 0]]
+
+**************start round 0***********
+
+original pauli isIIII
+emptylist found, move to next layer
+
+**************start round 1***********
+
+original pauli isZIII
+original list is['0']
+we only have one biggest component [['0']] 
+turn in to logical qubits
+from hardware to logical mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the logical qubits component is [['0']]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the biggest component is ['0']
+[0]
+0
+0
+all candiates are [0]
+only one candiate return
+the root is 0
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+0  
+******
+0
+*****
+['0', -1]
+[1]
+[['0']]
+[['0']]
+
+**************start round 2***********
+
+original pauli isZIIZ
+original list is['0', '3']
+[['3'], ['0']]
+the biggest component in hardware is ['3']
+other components in hardware are ['0'] 
+turn in to logical qubits
+from hardware to logical mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the logical qubits component is [['3'], ['0']]
+current mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+round 0
+logical qubit0
+hardware qubit0
+before swap the distance is 3
+previous distance is 3
+we can add swap between physical qubit 0  and physical qubit1  
+from hardware to logical mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit0 and qubit1
+from logical to hardware mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the new distance now is 2
+the cost value is -1
+from hardware to logical mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit0 and qubit1
+from logical to hardware mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+******
+previous distance is 3
+we can add swap between physical qubit 0  and physical qubit11  
+from hardware to logical mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit0 and qubit11
+from logical to hardware mapping is [11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+the new distance now is 2
+the cost value is -1
+from hardware to logical mapping is [11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+we swap hardware qubit0 and qubit11
+from logical to hardware mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+******
+[[1, -1, 2], [11, -1, 2]]
+debug with costlist[[1, -1, 2], [11, -1, 2]]
+current mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we will choose swap qubit 0 and qubit 1  now it has distance2
+from hardware to logical mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit0 and qubit1
+from logical to hardware mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+after swap the mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+round 1
+logical qubit0
+hardware qubit1
+before swap the distance is 2
+previous distance is 2
+we can add swap between physical qubit 1  and physical qubit0  
+from hardware to logical mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit1 and qubit0
+from logical to hardware mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the new distance now is 3
+the cost value is 1
+from hardware to logical mapping is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit1 and qubit0
+from logical to hardware mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+******
+previous distance is 2
+we can add swap between physical qubit 1  and physical qubit2  
+from hardware to logical mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit1 and qubit2
+from logical to hardware mapping is [2, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the new distance now is 1
+the cost value is -1
+from hardware to logical mapping is [1, 2, 0, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit1 and qubit2
+from logical to hardware mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+******
+previous distance is 2
+we can add swap between physical qubit 1  and physical qubit10  
+from hardware to logical mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit1 and qubit10
+from logical to hardware mapping is [10, 0, 2, 3, 4, 5, 6, 7, 8, 9, 1, 11]
+the new distance now is 2
+the cost value is 0
+from hardware to logical mapping is [1, 10, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11]
+we swap hardware qubit1 and qubit10
+from logical to hardware mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+******
+[[0, 1, 3], [2, -1, 1], [10, 0, 2]]
+we can merget to biggest component if we swap qubit 1 and qubit 2  now it has distance1
+debug with costlist[[2, -1, 1], [10, 0, 2], [0, 1, 3]]
+current mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we will choose swap qubit 1 and qubit 2  now it has distance1
+from hardware to logical mapping is [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+we swap hardware qubit1 and qubit2
+from logical to hardware mapping is [2, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+after swap the mapping is [2, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+update compoennt with0
+[['3', '0']]
+[['3', '0']]
+1
+[[0, 1], [1, 2]]
+[2, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the biggest component is ['3', '0']
+[3, 2]
+3
+2
+1
+all candiates are [3, 2]
+{3: 1, 2: 1}
+[(3, 1), (2, 1)]
+the root is 3
+[2, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+3  
+******
+2  
+******
+3
+2
+*****
+['3', '2', -1]
+[2]
+[['3', '2']]
+[['2', '3']]
+
+**************start round 3***********
+
+original pauli isYYYY
+original list is['0', '1', '2', '3']
+we only have one biggest component [['0', '1', '2', '3']] 
+turn in to logical qubits
+from hardware to logical mapping is [1, 2, 0, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the logical qubits component is [['1', '2', '0', '3']]
+[2, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+the biggest component is ['1', '2', '0', '3']
+[0, 1, 2, 3]
+0
+1
+2
+3
+2
+all candiates are [1, 2]
+{1: 1, 2: 1}
+[(1, 1), (2, 1)]
+the root is 1
+[2, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+1  
+******
+0  2  
+******
+3  
+******
+1
+0
+*****
+2
+3
+*****
+['1', '0', -1, '2', '3', -1]
+[2, 5]
+[['1', '0'], ['1', '2', '3']]
+[['0', '1'], ['3', '2', '1']]
+the total swap are [[], [[0, 1], [1, 2]], []]
+3
+the swaps are[]
+the swaps are[[0, 1], [1, 2]]
+the swaps are[]
+the total schedule are [[['0']], [['2', '3']], [['0', '1'], ['3', '2', '1']]]
+the schedule are[['0']]
+the schedule are[['2', '3']]
+the schedule are[['0', '1'], ['3', '2', '1']]
+[]
+0
+cx q[2],q[3];
+['cx q[2],q[3];\n']
+1
+cx q[0],q[1];
+cx q[3],q[2];
+cx q[2],q[1];
+['cx q[0],q[1];\n', 'cx q[3],q[2];\n', 'cx q[2],q[1];\n']
+3
+the total swaps are 2 and the total cx gates are 11 the total depths are 9
+<AccountProvider for IBMQ(hub='ibm-q-pnnl', group='internal', project='default')>
+ibmq_belem

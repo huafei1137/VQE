@@ -1,0 +1,13 @@
+Baseline,Category,hue,value
+Crosstalkaware,Depth,Random-1,7
+Crosstalkaware,Depth,Random-2,12
+Crosstalkaware,Depth,sto3g,20
+Crosstalkaware,Gatenumber,Random-1,13
+Crosstalkaware,Gatenumber,Random-2,22
+Crosstalkaware,Gatenumber,sto3g,30
+Adapative,Depth,Random-1,15
+Adapative,Depth,Random-2,27
+Adapative,Depth,sto3g,39
+Adapative,Gatenumber,Random-1,20
+Adapative,Gatenumber,Random-2,26
+Adapative,Gatenumber,sto3g,54
