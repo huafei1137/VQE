@@ -1,0 +1,19 @@
+1.method的安排
+2.增加多machine的数据（谷歌的怎么说呢）, rigetti
+3.VQE的framework, 
+4.evaluation的表现,  先说general circuit的变化，再说vqe special case？general circuit, consideration1 用表格，记录depths， consideration2 用图，表示fidelity。
+
+isingmodel, 
+
+
+figure1, ytick rotate 90 figure size change
+figure2, all arrow meet the figure box
+figure3, too small, 
+figure5, text too small. 占2兰， 并且可以在上面写上具体是那一章节，policy，commutative 分开来，remain gates 去掉
+这时候完全不需要讲vqe，就说general circuit的framework，
+在第四章case study时候再讲vqe的framework，利用之前的工作，讲vqe会选出最好的circuit，再用上我们的compiler framework
+figure6, Melborune although is retired, recent work is still disucssing it.
+figure11 ，太小，一部分扔到appendix，放到一栏中。
+
+evaluation, machine/basis 对我算法有什么影响， 各种不同factor对我的performance有什么影响。对结果的分析，比如为什么不用的basis会有影响，以及我们增建了多少gate/fidelity， Li-Li也要说下，评价下为什么我们的fidelity不高，因为baseline不高。
+
